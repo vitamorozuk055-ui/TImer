@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #2c3e50;
+    /* Темний синій фон */
+    color: #ecf0f1;
+    /* Світлий текст */
+    text-align: center;
+}
+
+.timer-container {
+    background-color: #34495e;
+    /* Темніший синій для контейнера */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 90%;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #e67e22;
+    /* Помаранчевий заголовок */
+}
+
+.timer-display {
+    /* Застосовується як до countdown, так і до stopwatch */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: opacity 0.5s ease-in-out;
+    /* Для плавного переходу */
+}
+
+.time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #27ae60;
+    /* Зелений для блоків часу */
+    border-radius: 10px;
+    padding: 15px 25px;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.time-block span:first-child {
+    /* Число */
+    font-size: 4em;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.time-block .label {
+    /* Підпис */
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: #bdc3c7;
+}
+
+#countdown-message,
+#stopwatch-message {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #e74c3c;
+    /* Червоний для повідомлення */
+    margin-top: 20px;
+}
+
+/* Клас для приховування елементів */
+.hidden {
+    display: none;
+    opacity: 0;
+    /* Додаємо для плавного зникнення/появи */
+}
+
+/* Стилі для секундоміра, щоб відрізняти їх візуально */
+#stopwatch-display .time-block {
+    background-color: #3498db;
+    /* Інший колір для секундоміра */
+}
+
+#stopwatch-message {
+    color: #2ecc71;
+    /* Інший колір повідомлення для секундоміра */
+}

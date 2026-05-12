@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер + Секундомір</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="timer-container">
+        <h1 id="main-title">До кінця дії знижки залишилось!</h1>
+        <div class="timer-display" id="countdown-display">
+            <div class="time-block">
+                <span id="hours">00</span>
+                <span class="label">Годин</span>
+            </div>
+            <div class="time-block">
+                <span id="minutes">00</span>
+                <span class="label">Хвилин</span>
+            </div>
+            <div class="time-block">
+                <span id="seconds">00</span>
+                <span class="label">Секунд</span>
+            </div>
+        </div>
+        <p id="countdown-message"></p>
+
+        <div class="timer-display hidden" id="stopwatch-display">
+            <div class="time-block">
+                <span id="sw-minutes">00</span>
+                <span class="label">Хвилин</span>
+            </div>
+            <div class="time-block">
+                <span id="sw-seconds">00</span>
+                <span class="label">Секунд</span>
+            </div>
+        </div>
+        <p id="stopwatch-message" class="hidden"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
